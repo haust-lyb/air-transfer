@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div style="width:100vw;height:100vh;background: pink;color: green;">
+    <iframe src="https://haust_lyb.gitee.io" style="width: 100vw;height:100vh;" frameborder="0"></iframe>
+</div>
+
+
+<script>
+    require('electron').ipcRenderer.on('ping', function (event, message) {
+        alert(message);
+    });
+</script>
+</body>
+
+</html>
