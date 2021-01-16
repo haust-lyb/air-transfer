@@ -2,3 +2,7 @@
 /node_modules/
 /out/
 /.idea/
+/test/vuedemo/vue-electron-js/node_modules/
+/test/vuedemo/vue-electron-js/.DS_Store
+/test/vuedemo/vue-electron-js/dist_electron/
+/test/vuedemo/vue-electron-js/dist_electron/dist/
