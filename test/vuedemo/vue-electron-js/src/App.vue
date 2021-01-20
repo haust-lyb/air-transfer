@@ -1,17 +1,25 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div v-for="item in clipboardlist">
+      {{item}}
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+const {ipcRenderer} = require('electron')
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  data(){
+    return {
+      clipboardlist:[]
+    }
+  },
+  mounted() {
+    ipcRenderer.on("refreshclipboardlist",()=>{
+
+    })
   }
 }
 </script>
